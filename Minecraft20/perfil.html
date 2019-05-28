@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <div id="row1" class="row">
+        <div class="rowTest">
+            <a href="index.html"><button id="button1" class="button">
+                HOME
+            </button></a>
+            <button id="button2" class="button">
+                BLOQUEADO
+            </button>
+            <button id="button3" class="button">
+                BLOQUEADO
+            </button>
+            <a href="index.html"><button id="button4" class="buttonSair">
+                SAIR
+                </button></a>
+        </div>
+        <div class="screen">
+            <dl class="lista">
+                <li >NOME:</li>
+                    <dd class="listaElm">PAULO ROBERTO</dd>
+                    <br>
+                <li >IDADE:</li>
+                    <dd class="listaElm">21</dd>
+                    <br>
+                <li >SEXO:</li>
+                    <dd class="listaElm">MASCULINO</dd>
+                    <br>
+                <li >DATA DE NASC.:</li>
+                    <dd class="listaElm">DD/MM/AAAA</dd>
+                    <br>
+                <li >SITUAÇÃO:</li>
+                    <dd class="listaElm">EM TRATAMENTO</dd>
+                    <br>
+                
+            </dl>
+        </div>
+    </div>
+</html>
+<style>
+    body{
+        margin: 0;
+    }
+    .lista{
+        position: relative;
+        right: -23%;
+        width: 75%;
+        height: 45%;
+        list-style-type: none;
+        color: black;
+        background-color: #b0e0e6;
+        border: 4px solid #90c0c6;
+        border-radius: 10px;
+        font-family: Verdana, Geneva, sans-serif;
+        font-size: 16px;
+	overflow: auto;
+    }
+    .listaElm{
+        padding: 1px;
+        background-color: #fdfdfd;
+        border: 1.3px solid #AAA;
+        border-radius: 5px;
+        border-left-width: medium;
+        letter-spacing: 1px;
+    }
+    .screen{
+        height: 95.79%;
+        width: 84%;
+        left: 1.8%;
+        position: relative;
+        top: 1%;
+        opacity: 1;
+        background-color: #b7ffe2;
+        display: flex;
+        float:left;
+        border-radius: 0 0 0 0;
+        border: 7px solid #50d5dc;
+    }
+    .rowTest{
+        height:95%;
+        width:10%;
+        left:1%;
+        position:relative;
+        top:1%;
+        padding:3px 3px 3px 3px;
+        opacity:1;
+        background-color:#b7ffe2;
+        display:flex;
+        float:left;
+        border-radius:0 0 0 0;
+        border:7px solid #50d5dc;
+    }
+    .row{
+        height: 99.9%;
+        width: 99.9%;
+        left: 0px;
+        top: 0px;
+        position: absolute;
+        opacity: 1;
+        background-color: #5da99a;
+        justify-content:flex-start;
+        align-items:stretch;
+        flex-wrap:nowrap;
+        color: blue;
+        display:flex;
+    }
+    .cell{
+        min-height:75px;
+        flex-grow:1;
+        flex-basis:100%;
+    }
+    .button{
+        width: 100%;
+        height: 12%;
+        font-family:Verdana, Geneva, sans-serif;
+        font-size:20px;
+        font-weight:700;
+        letter-spacing:1px;
+        color:#ffffff;
+        background-color: #a8dff7;
+        transition-duration: 0.15s;
+        box-shadow: 0 5px #999;
+        text-shadow: 0 1px 3px black;
+        border-radius: 5px;
+        border:5px none black;
+    }
+    .button:hover{
+        background-color:#96cde5;
+        color: #ececec;
+    }
+    .button:active{
+        transform: translateY(2px);
+        box-shadow: 0 3px #555;
+        color: #dfdfdf;
+    }
+    .buttonSair{
+        width: 100%;
+        height: 12%;
+        font-family:Verdana, Geneva, sans-serif;
+        font-size:20px;
+        font-weight:700;
+        letter-spacing:1px;
+        color:#ffffff;
+        background-color: #f7ac85;
+        transition-duration: 0.15s;
+        box-shadow: 0 5px #999;
+        text-shadow: 0 1px 3px black;
+        border-radius: 5px;
+        border:5px none black;
+    }
+    .buttonSair:hover{
+        background-color: #e79c75;
+        color: #ececec;
+    }
+    .buttonSair:active{
+        transform: translateY(2px);
+        box-shadow: 0 3px #555;
+        color: #dfdfdf;
+    }
+    #button1{
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+    #button2{
+        position: absolute;
+        top: 29%;
+        left: 0%;
+        font-size: 16px;
+    }
+    #button3{
+        position: absolute;
+        top: 58%;
+        font-size: 16px;
+        left: 0%;
+    }
+    #button4{
+        position: absolute;
+        top: 87%;
+        left: 0%;
+    }
+    #row1{
+        padding-top: 0.5px;
+        padding-left: 0.5px;
+        padding-right: 0.5px;
+        padding-bottom: 0.5px;
+    }
+</style>

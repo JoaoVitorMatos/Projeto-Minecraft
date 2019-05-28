@@ -1,0 +1,133 @@
+*{padding: 0; margin: 0;}
+
+#main{
+	display: grid;
+	grid-template-rows: 15vh 75vh 10vh;
+	grid-template-areas: "header header" "nav content" "footer footer";	
+}
+
+.mainHeader{
+	grid-area: header;
+	background: #1da1f2;
+	color: white;
+	font-family: FreeMono;
+	padding: 20px 10px;
+}
+
+.mainNav{
+	grid-area: nav;
+	background: white;
+}
+
+.mainContent{
+	grid-area: content;
+	background: white;
+}
+
+.mainFooter{
+	grid-area: footer;
+	background: black;
+	color: white;
+	font-family: FreeMono;
+	text-align: center;
+	padding: 10px 0;
+}
+
+element.style {
+    height: auto !important;
+}
+
+.widewrapper.main {
+    -webkit-box-shadow: inset 1px 3px 1px -2px #ababab;
+    -moz-box-shadow: inset 1px 3px 1px -2px #ababab;
+    box-shadow: inset 1px 3px 1px -2px #ababab;
+}
+
+.primeiro{
+	position: absolute;
+	top:75%;
+	left: 25%;
+	transform: translate(-50%, -50%);
+}
+
+.segundo{
+	position: absolute;
+	top:75%;
+	left: 75%;
+	transform: translate(-50%, -50%);	
+}
+
+button{
+	background: none;
+	color: gray;
+	width: 150px;
+	height: 50px;
+	border: 1px none;
+	font-size: 18px;
+	border-radius: 4px;
+	transition: .6s;
+	overflow: hidden;
+    text-shadow: 0 1px 0 rgba(255,255,255,0.25);
+    border-bottom: 2px solid white;
+}
+
+button: focus{
+	outline: none;
+}
+
+button:before{
+	content: '';
+	display: block;
+	position: absolute;
+	background: rgba(255,255,255,.5);
+	width: 60px;
+	height: 100%;
+	left: 0;
+	top: 0;
+	opacity: .5s;
+	filter: blur(30px);
+	transform: translateX(-130px) skweX(-15deg);
+}
+
+button:after{
+	content: '';
+	display: block;
+	position: absolute;
+	background: rgba(255,255,255,.2);
+	width: 30px;
+	height: 100%;
+	left: 30px;
+	top: 0;
+	opacity: 0;
+	filter: blur(30px);
+	transform: translate(-100px) scaleX(-15deg);
+}
+
+button:hover{
+	background: #e1e1e1;
+	cursor: pointer;
+	color: black;
+	border-bottom: 2px solid #1da1f2;
+}
+
+button:hover:before{''
+	transform: translateX(300px) skweX(-15deg);
+	opacity: .6;
+	transition: .7s;
+}
+
+
+button:hover:after{
+	transform: translateX(300px) skweX(-15deg);
+	opacity: .1;
+	transition: .7s;
+}
+
+.box{
+	width: 200px;
+	height: 200px;
+	background: black;
+	margin: 10% 0 0 30%;
+}
+
+
